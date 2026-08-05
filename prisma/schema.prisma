@@ -1,8 +1,6 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
 generator client {
   provider = "prisma-client"
   output   = "../lib/generated/prisma"
@@ -10,4 +8,161 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+}
+
+// ============================================================
+// Enums
+// ============================================================
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum Category {
+  CLOTHING
+  FOOTWEAR
+  ACCESSORIES
+  HOME
+  BEAUTY
+}
+
+enum ProductSize {
+  XS
+  S
+  M
+  L
+  XL
+}
+
+enum OrderStatus {
+  PENDING
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
+enum PaymentStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  REFUNDED
+}
+
+// ============================================================
+// Models
+// ============================================================
+
+model User {
+  id         String  @id @default(cuid())
+  name       String
+  email      String  @unique
+  password   String
+  role       Role    @default(USER)
+  image      String?
+
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  wishlist   WishlistItem[]
+  orders     Order[]
+  addresses  Address[]
+  cartItems  CartItem[]
+}
+
+model Address {
+  id        String  @id @default(cuid())
+  userId    String
+  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  street    String
+  city      String
+  state     String
+  zip       String
+  country   String
+  isDefault Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  orders    Order[]
+}
+
+model Product {
+  id             String      @id @default(cuid())
+  slug           String      @unique
+  name           String
+  description    String
+  price          Int         // stored in cents
+  compareAtPrice Int?
+  category       Category
+  image          String
+  images         String[]    // array of image URLs/gradients
+  sizes          ProductSize[]
+  colors         String[]    // hex color values
+  stock          Int         @default(0)
+  rating         Float       @default(0)
+  reviewCount    Int         @default(0)
+  isFeatured     Boolean     @default(false)
+  isNew          Boolean     @default(false)
+
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+
+  orders         OrderItem[]
+  wishlist       WishlistItem[]
+  cartItems      CartItem[]
+}
+
+model WishlistItem {
+  id        String  @id @default(cuid())
+  userId    String
+  productId String
+  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@unique([userId, productId])
+}
+
+model CartItem {
+  id        String      @id @default(cuid())
+  userId    String
+  productId String
+  size      ProductSize
+  quantity  Int         @default(1)
+  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product   Product     @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime    @default(now())
+
+  @@unique([userId, productId, size])
+}
+
+model Order {
+  id            String        @id @default(cuid())
+  userId        String
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  status        OrderStatus   @default(PENDING)
+  paymentStatus PaymentStatus @default(PENDING)
+  stripeId      String?       @unique
+  total         Int           // total in cents
+  shippingAddress Address?    @relation(fields: [shippingAddressId], references: [id])
+  shippingAddressId String?   @unique
+
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  items          OrderItem[]
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  orderId   String
+  productId String
+  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product   Product @relation(fields: [productId], references: [id])
+  name      String  // snapshot of product name at purchase time
+  price     Int     // snapshot of unit price in cents
+  quantity  Int
+  size      ProductSize?
 }
