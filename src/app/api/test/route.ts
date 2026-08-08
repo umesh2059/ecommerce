@@ -4,12 +4,13 @@ import { prisma }  from "@/lib/prisma";
 
 export async function GET(){
     try{
-        await prisma.$connect();
+        console.log(prisma);
 
         return NextResponse.json({
             success:true,
             message:"database connected successfully",
         });
+        
     } catch (error){
         console.error(error);
         return NextResponse.json(
