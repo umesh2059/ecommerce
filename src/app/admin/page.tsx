@@ -4,6 +4,8 @@ import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { getSession } from "@/lib/auth";
 import { DeleteProductButton } from "./delete-product-button";
+import { AddProductModal } from "./add-product-modal";
+import { EditProductModal } from "./edit-product-modal";
 
 export const dynamic = "force-dynamic";
 
@@ -33,12 +35,15 @@ export default async function AdminPage() {
             Signed in as {user.name}. Manage your catalog.
           </p>
         </div>
-        <Link
-          href="/api/products"
-          className="hidden text-sm text-muted-foreground hover:text-foreground"
-        >
-          API reference
-        </Link>
+        <div className="flex items-center gap-3">
+          <AddProductModal />
+          <Link
+            href="/api/products"
+            className="hidden text-sm text-muted-foreground hover:text-foreground sm:block"
+          >
+            API reference
+          </Link>
+        </div>
       </header>
 
       <section className="mt-8 grid gap-4 sm:grid-cols-3">
@@ -95,7 +100,10 @@ export default async function AdminPage() {
                     {product.slug}
                   </td>
                   <td className="px-4 py-3 text-right">
-                    <DeleteProductButton id={product.id} />
+                    <div className="flex justify-end gap-2">
+                      <EditProductModal product={product} />
+                      <DeleteProductButton id={product.id} />
+                    </div>
                   </td>
                 </tr>
               ))}

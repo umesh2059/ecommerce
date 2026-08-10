@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -10,9 +7,120 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// ============================================================
-// Enums
-// ============================================================
+model User {
+  id        String         @id @default(cuid())
+  name      String
+  email     String         @unique
+  password  String
+  role      Role           @default(USER)
+  image     String?
+  createdAt DateTime       @default(now())
+  updatedAt DateTime       @updatedAt
+  addresses Address[]
+  cartItems CartItem[]
+  orders    Order[]
+  sessions  Session[]
+  wishlist  WishlistItem[]
+}
+
+model Session {
+  id        String    @id @default(cuid())
+  jti       String    @unique
+  userId    String
+  expiresAt DateTime
+  revokedAt DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Address {
+  id        String   @id @default(cuid())
+  userId    String
+  street    String
+  city      String
+  state     String
+  zip       String
+  country   String
+  isDefault Boolean  @default(false)
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  orders    Order?
+}
+
+model Product {
+  id             String         @id @default(cuid())
+  slug           String         @unique
+  name           String
+  description    String
+  price          Int
+  compareAtPrice Int?
+  category       Category
+  image          String
+  images         String[]
+  sizes          ProductSize[]
+  colors         String[]
+  stock          Int            @default(0)
+  rating         Float          @default(0)
+  reviewCount    Int            @default(0)
+  isFeatured     Boolean        @default(false)
+  isNew          Boolean        @default(false)
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  cartItems      CartItem[]
+  orders         OrderItem[]
+  wishlist       WishlistItem[]
+}
+
+model WishlistItem {
+  id        String   @id @default(cuid())
+  userId    String
+  productId String
+  createdAt DateTime @default(now())
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, productId])
+}
+
+model CartItem {
+  id        String      @id @default(cuid())
+  userId    String
+  productId String
+  size      ProductSize
+  quantity  Int         @default(1)
+  createdAt DateTime    @default(now())
+  product   Product     @relation(fields: [productId], references: [id], onDelete: Cascade)
+  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, productId, size])
+}
+
+model Order {
+  id                String        @id @default(cuid())
+  userId            String
+  status            OrderStatus   @default(PENDING)
+  paymentStatus     PaymentStatus @default(PENDING)
+  stripeId          String?       @unique
+  total             Int
+  shippingAddressId String?       @unique
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+  shippingAddress   Address?      @relation(fields: [shippingAddressId], references: [id])
+  user              User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items             OrderItem[]
+}
+
+model OrderItem {
+  id        String       @id @default(cuid())
+  orderId   String
+  productId String
+  name      String
+  price     Int
+  quantity  Int
+  size      ProductSize?
+  order     Order        @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product   Product      @relation(fields: [productId], references: [id])
+}
 
 enum Role {
   USER
@@ -48,133 +156,4 @@ enum PaymentStatus {
   COMPLETED
   FAILED
   REFUNDED
-}
-
-// ============================================================
-// Models
-// ============================================================
-
-model User {
-  id         String  @id @default(cuid())
-  name       String
-  email      String  @unique
-  password   String
-  role       Role    @default(USER)
-  image      String?
-
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-
-  wishlist   WishlistItem[]
-  orders     Order[]
-  addresses  Address[]
-  cartItems  CartItem[]
-  sessions   Session[]
-}
-
-model Session {
-  id        String    @id @default(cuid())
-  jti       String    @unique
-  userId    String
-  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-  expiresAt DateTime
-  revokedAt DateTime?
-
-  createdAt DateTime  @default(now())
-}
-
-model Address {
-  id        String  @id @default(cuid())
-  userId    String
-  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
-  street    String
-  city      String
-  state     String
-  zip       String
-  country   String
-  isDefault Boolean @default(false)
-
-  createdAt DateTime @default(now())
-  orders    Order[]
-}
-
-model Product {
-  id             String      @id @default(cuid())
-  slug           String      @unique
-  name           String
-  description    String
-  price          Int         // stored in cents
-  compareAtPrice Int?
-  category       Category
-  image          String
-  images         String[]    // array of image URLs/gradients
-  sizes          ProductSize[]
-  colors         String[]    // hex color values
-  stock          Int         @default(0)
-  rating         Float       @default(0)
-  reviewCount    Int         @default(0)
-  isFeatured     Boolean     @default(false)
-  isNew          Boolean     @default(false)
-
-  createdAt      DateTime    @default(now())
-  updatedAt      DateTime    @updatedAt
-
-  orders         OrderItem[]
-  wishlist       WishlistItem[]
-  cartItems      CartItem[]
-}
-
-model WishlistItem {
-  id        String  @id @default(cuid())
-  userId    String
-  productId String
-  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
-  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
-
-  createdAt DateTime @default(now())
-
-  @@unique([userId, productId])
-}
-
-model CartItem {
-  id        String      @id @default(cuid())
-  userId    String
-  productId String
-  size      ProductSize
-  quantity  Int         @default(1)
-  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
-  product   Product     @relation(fields: [productId], references: [id], onDelete: Cascade)
-
-  createdAt DateTime    @default(now())
-
-  @@unique([userId, productId, size])
-}
-
-model Order {
-  id            String        @id @default(cuid())
-  userId        String
-  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
-  status        OrderStatus   @default(PENDING)
-  paymentStatus PaymentStatus @default(PENDING)
-  stripeId      String?       @unique
-  total         Int           // total in cents
-  shippingAddress Address?    @relation(fields: [shippingAddressId], references: [id])
-  shippingAddressId String?   @unique
-
-  createdAt      DateTime      @default(now())
-  updatedAt      DateTime      @updatedAt
-
-  items          OrderItem[]
-}
-
-model OrderItem {
-  id        String  @id @default(cuid())
-  orderId   String
-  productId String 
-  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
-  product   Product @relation(fields: [productId], references: [id])
-  name      String  // snapshot of product name at purchase time
-  price     Int     // snapshot of unit price in cents
-  quantity  Int
-  size      ProductSize?
 }
