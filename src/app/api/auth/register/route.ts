@@ -1,6 +1,13 @@
 import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import { prisma } from "@/lib/prisma";
+import { sessionCookieOptions, issueSession } from "@/lib/auth";
+import {
+  normalizeEmail,
+  isValidEmail,
+  isValidPassword,
+  PASSWORD_MIN_LENGTH,
+} from "@/lib/validators";
 
 export async function POST(request: Request) {
   try {
@@ -19,20 +26,43 @@ export async function POST(request: Request) {
       );
     }
 
-    if (password.length < 6) {
+    if (typeof name !== "string" || name.trim().length < 2) {
       return NextResponse.json(
         {
           success: false,
-          message: "Password must be at least 6 characters",
+          message: "Name must be at least 2 characters",
         },
         { status: 400 }
       );
     }
 
+    if (typeof email !== "string" || !isValidEmail(email)) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Please provide a valid email address",
+        },
+        { status: 400 }
+      );
+    }
+
+    if (typeof password !== "string" || !isValidPassword(password)) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: `Password must be at least ${PASSWORD_MIN_LENGTH} characters`,
+        },
+        { status: 400 }
+      );
+    }
+
+    // Normalize to avoid case-sensitive duplicate accounts
+    const normalizedEmail = normalizeEmail(email);
+
     // Check existing user
     const existingUser = await prisma.user.findUnique({
       where: {
-        email,
+        email: normalizedEmail,
       },
     });
 
@@ -52,13 +82,18 @@ export async function POST(request: Request) {
     // Create user
     const user = await prisma.user.create({
       data: {
-        name,
-        email,
+        name: name.trim(),
+        email: normalizedEmail,
         password: hashedPassword,
       },
     });
 
-    return NextResponse.json(
+    // Auto-login: sign a JWT and store it in an HTTP-only cookie so the
+    // user does not have to sign in right after registering. A server-side
+    // session is persisted so logout can revoke it.
+    const token = await issueSession(user.id, user.role);
+
+    const response = NextResponse.json(
       {
         success: true,
         message: "User registered successfully",
@@ -71,6 +106,10 @@ export async function POST(request: Request) {
       },
       { status: 201 }
     );
+
+    response.cookies.set("token", token, sessionCookieOptions());
+
+    return response;
   } catch (error) {
     console.error("REGISTER ERROR:", error);
 

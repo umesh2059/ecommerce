@@ -69,6 +69,18 @@ model User {
   orders     Order[]
   addresses  Address[]
   cartItems  CartItem[]
+  sessions   Session[]
+}
+
+model Session {
+  id        String    @id @default(cuid())
+  jti       String    @unique
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  revokedAt DateTime?
+
+  createdAt DateTime  @default(now())
 }
 
 model Address {

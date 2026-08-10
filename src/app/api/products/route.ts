@@ -1,13 +1,20 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { requireAdmin } from "@/lib/auth";
 
 // ========================================
-// CREATE PRODUCT
+// CREATE PRODUCT (admin only)
 // POST /api/products
 // ========================================
 
 export async function POST(request: Request) {
   try {
+    const { response } = await requireAdmin();
+
+    if (response) {
+      return response;
+    }
+
     const body = await request.json();
 
     const {
@@ -58,6 +65,16 @@ export async function POST(request: Request) {
           message: "Product with this slug already exists",
         },
         { status: 409 }
+      );
+    }
+
+    if (typeof price !== "number" || !Number.isInteger(price) || price <= 0) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Price must be a positive integer (amount in cents)",
+        },
+        { status: 400 }
       );
     }
 

@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken";
 import { prisma } from "@/lib/prisma";
+import { sessionCookieOptions, issueSession } from "@/lib/auth";
+import { normalizeEmail } from "@/lib/validators";
 
 export async function POST(request: Request) {
   try {
@@ -23,7 +24,7 @@ export async function POST(request: Request) {
     // 2. Find user
     const user = await prisma.user.findUnique({
       where: {
-        email,
+        email: normalizeEmail(email),
       },
     });
 
@@ -53,26 +54,10 @@ export async function POST(request: Request) {
       );
     }
 
-    // 4. Check JWT secret
-    const jwtSecret = process.env.JWT_SECRET;
+    // 4. Create JWT + persist server-side session so logout can revoke it
+    const token = await issueSession(user.id, user.role);
 
-    if (!jwtSecret) {
-      throw new Error("JWT_SECRET is not configured");
-    }
-
-    // 5. Create JWT
-    const token = jwt.sign(
-      {
-        userId: user.id,
-        role: user.role,
-      },
-      jwtSecret,
-      {
-        expiresIn: "7d",
-      }
-    );
-
-    // 6. Create response
+    // 5. Create response
     const response = NextResponse.json({
       success: true,
       message: "Login successful",
@@ -84,14 +69,8 @@ export async function POST(request: Request) {
       },
     });
 
-    // 7. Store JWT in HTTP-only cookie
-    response.cookies.set("token", token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
-      maxAge: 60 * 60 * 24 * 7,
-      path: "/",
-    });
+    // 6. Store JWT in HTTP-only cookie
+    response.cookies.set("token", token, sessionCookieOptions());
 
     return response;
   } catch (error) {

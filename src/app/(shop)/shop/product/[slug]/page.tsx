@@ -9,6 +9,7 @@ import {
 } from "@/constants/products";
 import { ProductCard } from "@/components/cards/product-card";
 import { Button } from "@/components/ui/button";
+import { getCurrentUser } from "@/lib/auth";
 import { cn } from "@/lib/utils";
 
 export default async function ProductPage({
@@ -22,6 +23,16 @@ export default async function ProductPage({
   if (!product) {
     notFound();
   }
+
+  const user = await getCurrentUser();
+
+  const checkoutUrl = `/checkout?product=${encodeURIComponent(product.slug)}`;
+
+  // Guests are asked to log in or register before they can buy, then
+  // redirected straight back here to continue checkout.
+  const buyHref = user
+    ? checkoutUrl
+    : `/login?next=${encodeURIComponent(checkoutUrl)}`;
 
   const related = getRelatedProducts(product);
   const hasDiscount = product.compareAtPrice && product.compareAtPrice > product.price;
@@ -140,9 +151,19 @@ export default async function ProductPage({
           </div>
 
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button size="lg" className="flex-1">
-              Add to cart
-            </Button>
+            {user ? (
+              <Button render={<Link href={buyHref} />} size="lg" className="flex-1">
+                Buy now
+              </Button>
+            ) : (
+              <Button
+                render={<Link href={buyHref} />}
+                size="lg"
+                className="flex-1"
+              >
+                Buy now · Sign in to checkout
+              </Button>
+            )}
             <Button size="lg" variant="outline" className="sm:w-14">
               <Heart className="size-5" />
               <span className="sr-only">Add to wishlist</span>
