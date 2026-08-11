@@ -24,9 +24,10 @@ export function ProductCard({
       )}
     >
       <div className="relative aspect-square overflow-hidden rounded-t-lg">
-        <div
-          className="absolute inset-0 transition-transform duration-300 group-hover:scale-105"
-          style={{ background: product.image }}
+        <img
+          src={product.image}
+          alt={product.name}
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
         <div className="absolute left-3 top-3 flex flex-col gap-1">
           {product.isNew && (

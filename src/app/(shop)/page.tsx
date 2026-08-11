@@ -131,9 +131,10 @@ function CategoryCard({
       href={`/shop?category=${slug}`}
       className="group relative flex aspect-[4/5] items-end overflow-hidden rounded-xl border border-border"
     >
-      <div
-        className="absolute inset-0 transition-transform duration-300 group-hover:scale-105"
-        style={{ background: image }}
+      <img
+        src={image}
+        alt={name}
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
       <span className="relative p-4 text-sm font-medium text-white">
