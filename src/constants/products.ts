@@ -310,8 +310,8 @@ export function getRelatedProducts(product: Product): Product[] {
 }
 
 export function formatPrice(priceInCents: number): string {
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat("en-IN", {
     style: "currency",
-    currency: "USD",
+    currency: "INR",
   }).format(priceInCents / 100);
 }
