@@ -39,7 +39,7 @@ export function Footer() {
             </Link>
             <p className="mt-3 max-w-xs text-sm text-muted-foreground">
               Considered goods for everyday living. Thoughtfully sourced,
-              honestly priced, built to last.
+              honestly priced, built to lasts.
             </p>
           </div>
 
