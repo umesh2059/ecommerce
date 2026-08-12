@@ -1,13 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import {
-  getProductBySlug,
-  getRelatedProducts,
-} from "@/constants/products";
+import { getProductBySlug, getRelatedProducts } from "@/lib/products";
 import { ProductCard } from "@/components/cards/product-card";
 import { ProductDetailInteractive } from "@/components/products/product-detail-interactive";
 import { getCurrentUser } from "@/lib/auth";
+
+export const dynamic = "force-dynamic";
 
 export default async function ProductPage({
   params,
@@ -15,7 +14,7 @@ export default async function ProductPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  const product = await getProductBySlug(slug);
 
   if (!product) {
     notFound();
@@ -31,7 +30,7 @@ export default async function ProductPage({
     ? checkoutUrl
     : `/login?next=${encodeURIComponent(checkoutUrl)}`;
 
-  const related = getRelatedProducts(product);
+  const related = await getRelatedProducts(product);
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8 sm:py-12">

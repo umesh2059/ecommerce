@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { SlidersHorizontal } from "lucide-react";
 
-import { products, categories } from "@/constants/products";
+import { categories } from "@/constants/products";
+import { getProducts } from "@/lib/products";
 import { ProductCard } from "@/components/cards/product-card";
 import { SortSelect } from "./sort-select";
 import { cn } from "@/lib/utils";
 
 type SearchParams = Record<string, string | string[] | undefined>;
+
+export const dynamic = "force-dynamic";
 
 function getParam(value: string | string[] | undefined): string {
   return typeof value === "string" ? value : "";
@@ -22,6 +25,7 @@ export default async function ShopPage({
   const filter = getParam(params.filter);
   const sort = getParam(params.sort);
 
+  const products = await getProducts();
   let visible = [...products];
 
   if (category) {

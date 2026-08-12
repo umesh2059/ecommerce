@@ -1,17 +1,21 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
+import { categories } from "@/constants/products";
 import {
-  categories,
   getFeaturedProducts,
   getNewArrivals,
-} from "@/constants/products";
+} from "@/lib/products";
 import { ProductCard } from "@/components/cards/product-card";
 import { Button } from "@/components/ui/button";
 
-export default function HomePage() {
-  const featured = getFeaturedProducts();
-  const newArrivals = getNewArrivals();
+export const dynamic = "force-dynamic";
+
+export default async function HomePage() {
+  const [featured, newArrivals] = await Promise.all([
+    getFeaturedProducts(),
+    getNewArrivals(),
+  ]);
 
   return (
     <div className="flex flex-col gap-16 py-8 sm:py-12">

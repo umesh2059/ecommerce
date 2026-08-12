@@ -2,7 +2,8 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Check, Lock } from "lucide-react";
 
-import { formatPrice, getProductBySlug } from "@/constants/products";
+import { formatPrice } from "@/constants/products";
+import { getProductBySlug } from "@/lib/products";
 import { getSession } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 
@@ -27,7 +28,7 @@ export default async function CheckoutPage({
   }
 
   const { product: slug } = await searchParams;
-  const product = slug ? getProductBySlug(slug) : undefined;
+  const product = slug ? await getProductBySlug(slug) : undefined;
 
   const subtotal = product?.price ?? 0;
   const shipping = subtotal >= 75 || subtotal === 0 ? 0 : 9.99;
