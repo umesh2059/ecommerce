@@ -1,0 +1,28 @@
+
+> myshoop@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.0 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://172.20.214.200:3000
+- Environments: .env
+✓ Ready in 1598ms
+⚠ Warning: Next.js ignored package-lock.json in C:\Users\Umesh Gupta because it is outside the current Git repository (C:\Users\Umesh Gupta\myshoop).
+ To use this directory, set `turbopack.root` in your Next.js config.
+
+✓ Running next.config.ts took 88ms
+
+ POST /api/upload 401 in 533ms (next.js: 401ms, application-code: 132ms)
+REGISTER ERROR: SyntaxError: Unterminated string in JSON at position 13 (line 1 column 14)
+    at JSON.parse (<anonymous>)
+    at async POST (src\app\api\auth\register\route.ts:14:18)
+  12 | export async function POST(request: Request) {
+  13 |   try {
+> 14 |     const body = await request.json();
+     |                  ^
+  15 |
+  16 |     const { name, email, password } = body;
+  17 |
+ POST /api/auth/register 500 in 340ms (next.js: 65ms, application-code: 275ms)
+ POST /api/auth/register 201 in 4.1s (next.js: 7ms, application-code: 4.1s)
+ POST /api/upload 200 in 2.5s (next.js: 8ms, application-code: 2.5s)
