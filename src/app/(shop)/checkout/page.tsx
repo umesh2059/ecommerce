@@ -5,7 +5,7 @@ import { Check, Lock } from "lucide-react";
 import { formatPrice } from "@/constants/products";
 import { getProductBySlug } from "@/lib/products";
 import { getSession } from "@/lib/auth";
-import { Button } from "@/components/ui/button";
+import { PlaceOrderButton } from "@/components/checkout/place-order-button";
 
 export const metadata = {
   title: "Checkout",
@@ -14,7 +14,7 @@ export const metadata = {
 export default async function CheckoutPage({
   searchParams,
 }: {
-  searchParams: Promise<{ product?: string }>;
+  searchParams: Promise<{ product?: string; size?: string }>;
 }) {
   const user = await getSession();
 
@@ -27,8 +27,11 @@ export default async function CheckoutPage({
     redirect(`/login?next=${encodeURIComponent(next)}`);
   }
 
-  const { product: slug } = await searchParams;
+  const { product: slug, size } = await searchParams;
   const product = slug ? await getProductBySlug(slug) : undefined;
+
+  const selectedSize =
+    product && size ? size : product?.sizes[0] ?? "";
 
   const subtotal = product?.price ?? 0;
   const shipping = subtotal >= 75 || subtotal === 0 ? 0 : 9.99;
@@ -60,7 +63,7 @@ export default async function CheckoutPage({
             <div className="flex flex-1 flex-col gap-0.5">
               <p className="font-medium">{product.name}</p>
               <p className="text-sm text-muted-foreground">
-                {product.category} · {product.sizes[0]}
+                {product.category} · {selectedSize}
               </p>
             </div>
             <span className="font-semibold">
@@ -93,9 +96,13 @@ export default async function CheckoutPage({
         </dl>
 
         <div className="border-t border-border px-5 py-4">
-          <Button size="lg" className="w-full" disabled={!product}>
-            {product ? "Place order" : "Add an item to checkout"}
-          </Button>
+          <PlaceOrderButton
+            productSlug={product?.slug ?? ""}
+            productName={product?.name ?? ""}
+            size={selectedSize}
+            userEmail={user.email}
+            disabled={!product}
+          />
           <p className="mt-3 flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
             <Lock className="size-3.5" />
             Secure checkout · Protected payments <Check className="size-3.5 text-emerald-600" />

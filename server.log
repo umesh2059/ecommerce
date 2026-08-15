@@ -4325,3 +4325,4230 @@ If you need interactivity, consider converting part of this to a Client Componen
 ✓ Compiled in 318ms
  GET / 200 in 2.9s (next.js: 26ms, application-code: 2.9s)
  GET /admin 200 in 4.0s (next.js: 15ms, application-code: 4.0s)
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Facebook doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Instagram doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Twitter doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+[browser] ./src/components/footer/footer.tsx:2:1
+Error: Export Youtube doesn't exist in target module
+   1 | import Link from "next/link";
+>  2 | import {
+     | ^^^^^^^
+>  3 |   ArrowRight,
+     | ^^^^^^^^^^^^^
+>  4 |   CreditCard,
+     | ^^^^^^^^^^^^^
+>  5 |   Facebook,
+     | ^^^^^^^^^^^
+>  6 |   Instagram,
+     | ^^^^^^^^^^^^
+>  7 |   Lock,
+     | ^^^^^^^
+>  8 |   Mail,
+     | ^^^^^^^
+>  9 |   RefreshCcw,
+     | ^^^^^^^^^^^^^
+> 10 |   Truck,
+     | ^^^^^^^^
+> 11 |   Twitter,
+     | ^^^^^^^^^^
+> 12 |   Youtube,
+     | ^^^^^^^^^^
+> 13 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^
+  14 |
+  15 | const shopLinks = [
+  16 |   { name: "New Arrivals", href: "/shop?filter=new" },
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/footer/footer.tsx
+    ./src/app/(shop)/layout.tsx 
+ GET / 200 in 5.5s (next.js: 33ms, application-code: 5.5s)
+ GET /shop/product/shirt 200 in 7.2s (next.js: 1418ms, application-code: 5.8s)
+ GET /checkout?product=shirt&size=M&color=%23000000 200 in 1571ms (next.js: 143ms, application-code: 1428ms)
+ GET /checkout?product=shirt&size=M&color=%23000000 200 in 1155ms (next.js: 41ms, application-code: 1114ms)
+ GET / 200 in 4.0s (next.js: 67ms, application-code: 3.9s)
+ GET /shop 200 in 943ms (next.js: 277ms, application-code: 666ms)
+ GET /shop/product/shirt 200 in 1726ms (next.js: 52ms, application-code: 1673ms)
+ GET /checkout?product=shirt&size=M&color=%23000000 200 in 1139ms (next.js: 13ms, application-code: 1126ms)
+ GET /shop?filter=new 200 in 594ms (next.js: 14ms, application-code: 580ms)
+ GET /shop/product/shirt 200 in 862ms (next.js: 28ms, application-code: 833ms)
+ GET /shop/product/shirt 200 in 1199ms (next.js: 31ms, application-code: 1168ms)
+ GET /checkout?product=shirt&size=M&color=%23000000 200 in 862ms (next.js: 15ms, application-code: 847ms)
+ GET / 200 in 3.8s (next.js: 47ms, application-code: 3.7s)
+ GET /shop/product/nike-air-force 200 in 1828ms (next.js: 36ms, application-code: 1792ms)
+ GET /checkout?product=nike-air-force&size=L&color=%23000000 200 in 913ms (next.js: 24ms, application-code: 889ms)

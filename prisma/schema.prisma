@@ -98,11 +98,14 @@ model CartItem {
 model Order {
   id                String        @id @default(cuid())
   userId            String
-  status            OrderStatus   @default(PENDING)
-  paymentStatus     PaymentStatus @default(PENDING)
-  stripeId          String?       @unique
-  total             Int
-  shippingAddressId String?       @unique
+  status              OrderStatus   @default(PENDING)
+  paymentStatus       PaymentStatus @default(PENDING)
+  stripeId            String?       @unique
+  razorpayOrderId     String?       @unique
+  razorpayPaymentId   String?
+  razorpaySignature   String?
+  total               Int
+  shippingAddressId   String?       @unique
   createdAt         DateTime      @default(now())
   updatedAt         DateTime      @updatedAt
   shippingAddress   Address?      @relation(fields: [shippingAddressId], references: [id])
