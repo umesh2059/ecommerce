@@ -248,3 +248,69 @@ delete-promotes-next-default), `create-order` rejecting a missing address
 `/checkout` and `/shop` HTML to confirm the address form and all three
 card quick-action buttons are present. No visual browser check (same
 Chrome-extension caveat as above).
+
+### "Added to cart" toast with a proceed-to-buy option — added 2026-09-07
+
+Adding to cart from a product card or the wishlist page previously gave no
+feedback at all — the item landed in the cart silently, with no path to
+checkout short of clicking through to `/cart` yourself. Added a global toast,
+triggered by `addToCart` itself so it fires from every entry point (product
+cards, the product detail page's "Add to cart" button, the wishlist page's
+add-to-cart button) without each of them needing their own UI for it.
+
+- `src/providers/cart-wishlist-provider.tsx` — `addToCart` now sets
+  `lastAddedToCart: { id, productName, productSlug, size }` from the
+  `POST /api/cart` response (`item.product.name`/`slug`, `item.size`) on
+  success. Exposed as `lastAddedToCart` + `dismissLastAddedToCart()` on the
+  context.
+- `src/components/cart/added-to-cart-toast.tsx` — fixed-position toast:
+  product name/size, a "View cart" link, and a "Proceed to buy" link straight
+  to `/checkout?product=<slug>&size=<size>` (the same single-item checkout
+  everything else already uses). Auto-dismisses after 6s via a `setTimeout`
+  in a `useEffect`, or on manual close/either button click.
+- Rendered from `src/app/layout.tsx`, as a sibling of `{children}` *inside*
+  `CartWishlistProvider`, not from inside the provider component itself —
+  deliberately, to avoid a circular import (the toast needs
+  `useCartWishlist`, which lives in the provider module).
+
+**Verification:** `tsc`/`eslint` clean. Confirmed via `curl` that
+`POST /api/cart`'s response shape (`item.product.name`, `item.product.slug`,
+`item.size`) matches exactly what the toast reads. Could not visually confirm
+the toast renders/auto-dismisses correctly in a real browser — no Chrome
+extension this session; worth a `/chrome` pass next time to eyeball
+positioning on mobile widths (`inset-x-4 bottom-4` vs `sm:right-4`).
+
+### Auto-rotating hero carousel — added 2026-09-07
+
+The homepage hero was a single static banner (`Hero()` in
+`src/app/(shop)/page.tsx`, no images, one headline). Replaced it with an
+auto-advancing, multi-slide carousel for festival/seasonal marketing banners.
+
+- `src/constants/hero-slides.ts` — the slide data (`HeroSlide[]`): `image`,
+  `gradient` overlay, `eyebrow` (small badge text, e.g. "Festive Season
+  Sale"), `heading`, `subheading`, `ctaLabel`/`ctaHref`. Four slides seeded:
+  a festival sale, new arrivals, a footwear-category push, and a free-
+  shipping/returns value prop. **These are placeholder marketing copy and
+  stock Unsplash photos** (same sourcing pattern as `categories` in
+  `src/constants/products.ts`), not tied to real promotions or DB content —
+  edit this array directly when there's an actual sale/campaign to run.
+- `src/components/home/hero-carousel.tsx` — hand-rolled slider (no carousel
+  library added): a flex track of full-width slides moved with a CSS
+  `translateX` transform, auto-advancing every 5s via `setInterval` in a
+  `useEffect` (paused on mouse-enter, resumed on mouse-leave), plus
+  prev/next arrow buttons and clickable dot indicators for manual control.
+  All three ways of changing slides funnel through one `goTo(index)` that
+  wraps with modulo, so there's a single source of truth for "which slide."
+- Also fixed a copy bug while replacing this: the old hero said "Free
+  shipping on orders over $75" — wrong currency symbol, since every price
+  and the actual shipping threshold in `create-order` are in ₹ (paise).
+
+**Verification:** `tsc`/`eslint` clean (the autoplay `setInterval`-in-effect
+did **not** trip `react-hooks/set-state-in-effect` — unlike the provider's
+mount-fetch effect, an interval callback is exactly the "subscribe to an
+external timer, setState in its callback" shape the rule's own docs call
+correct, so no suppression was needed here). Rendered the homepage against
+the project's own already-running dev server and confirmed all four slides'
+eyebrow/heading text is present in the HTML. Did not get a visual check of
+the sliding animation, arrow/dot interactions, or autoplay timing itself —
+no Chrome extension this session.

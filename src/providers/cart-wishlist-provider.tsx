@@ -15,12 +15,21 @@ export type WishlistLine = WishlistItem & { product: Product };
 
 type MutationResult = { success: boolean; message?: string };
 
+export type AddedToCartNotification = {
+  id: number;
+  productName: string;
+  productSlug: string;
+  size: string;
+};
+
 type CartWishlistContextValue = {
   isLoading: boolean;
   cartItems: CartLine[];
   cartCount: number;
   wishlistItems: WishlistLine[];
   wishlistIds: Set<string>;
+  lastAddedToCart: AddedToCartNotification | null;
+  dismissLastAddedToCart: () => void;
   addToCart: (input: {
     productId: string;
     size?: string;
@@ -41,6 +50,13 @@ export function CartWishlistProvider({ children }: { children: React.ReactNode }
   const [isLoading, setIsLoading] = useState(true);
   const [cartItems, setCartItems] = useState<CartLine[]>([]);
   const [wishlistItems, setWishlistItems] = useState<WishlistLine[]>([]);
+  const [lastAddedToCart, setLastAddedToCart] = useState<AddedToCartNotification | null>(
+    null
+  );
+
+  const dismissLastAddedToCart = useCallback(() => {
+    setLastAddedToCart(null);
+  }, []);
 
   const refresh = useCallback(async () => {
     try {
@@ -93,6 +109,16 @@ export function CartWishlistProvider({ children }: { children: React.ReactNode }
         }
 
         await refresh();
+
+        if (data.item?.product) {
+          setLastAddedToCart({
+            id: Date.now(),
+            productName: data.item.product.name,
+            productSlug: data.item.product.slug,
+            size: data.item.size,
+          });
+        }
+
         return { success: true, message: data.message };
       } catch (error) {
         console.error("ADD TO CART ERROR:", error);
@@ -192,6 +218,8 @@ export function CartWishlistProvider({ children }: { children: React.ReactNode }
       cartCount,
       wishlistItems,
       wishlistIds,
+      lastAddedToCart,
+      dismissLastAddedToCart,
       addToCart,
       updateCartItemQuantity,
       removeCartItem,
@@ -204,6 +232,8 @@ export function CartWishlistProvider({ children }: { children: React.ReactNode }
       cartCount,
       wishlistItems,
       wishlistIds,
+      lastAddedToCart,
+      dismissLastAddedToCart,
       addToCart,
       updateCartItemQuantity,
       removeCartItem,

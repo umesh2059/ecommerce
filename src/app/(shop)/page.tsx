@@ -8,6 +8,7 @@ import {
 } from "@/lib/products";
 import { ProductCard } from "@/components/cards/product-card";
 import { Button } from "@/components/ui/button";
+import { HeroCarousel } from "@/components/home/hero-carousel";
 
 export const dynamic = "force-dynamic";
 
@@ -19,7 +20,7 @@ export default async function HomePage() {
 
   return (
     <div className="flex flex-col gap-16 py-8 sm:py-12">
-      <Hero />
+      <HeroCarousel />
 
       <section className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between">
@@ -81,43 +82,6 @@ export default async function HomePage() {
         </div>
       </section>
     </div>
-  );
-}
-
-function Hero() {
-  return (
-    <section className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div className="relative flex min-h-[420px] flex-col justify-center overflow-hidden rounded-3xl bg-muted px-6 py-16 sm:px-12 sm:py-24 lg:px-16">
-        <div
-          className="absolute inset-0 opacity-80"
-          style={{
-            background:
-              "linear-gradient(120deg, rgba(30,41,59,0.9) 0%, rgba(71,85,105,0.5) 55%, rgba(148,163,184,0.3) 100%)",
-          }}
-        />
-        <div className="relative mx-auto flex w-full max-w-3xl flex-col items-center gap-6 text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Considered goods for everyday living
-          </h1>
-          <p className="max-w-xl text-base text-white/80 sm:text-lg">
-            Discover thoughtfully curated products that blend form, function,
-            and durability. Free shipping on orders over $75.
-          </p>
-          <div className="flex flex-col gap-3 sm:flex-row">
-                        <Button render={<Link href="/shop" />} size="lg">
-              Shop now
-            </Button>
-            <Button
-              render={<Link href="/shop?filter=new" />}
-              size="lg"
-              variant="secondary"
-            >
-              New arrivals
-            </Button>
-          </div>
-        </div>
-      </div>
-    </section>
   );
 }
 
