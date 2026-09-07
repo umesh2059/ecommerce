@@ -183,3 +183,68 @@ noticeable.
   extension wasn't installed this session. If something looks off visually
   (badge alignment, the quick-action buttons on the card image), that's the
   first place to look with `/chrome` in a future session.
+
+### Delivery addresses + direct "Buy now" on cards — added 2026-09-07
+
+**Schema fix (migration `20260907171547_drop_order_shipping_address_unique`):**
+`Order.shippingAddressId` was `@unique`, making `Address ↔ Order` a strict
+one-to-one — a saved address could only ever be attached to *one* order,
+ever. Any attempt to reuse a saved address for a second order would have
+hit a unique-constraint violation. Dropped the `@unique` (now a plain
+one-to-many: `Address.orders` is `Order[]`). Verified by creating two orders
+against the same address id in the same test run — both succeeded.
+
+**API** (`src/app/api/addresses/route.ts`, `src/app/api/addresses/[id]/route.ts`,
+both behind `requireAuth()`):
+- `GET /api/addresses` — list, `isDefault` first.
+- `POST /api/addresses` — body `{ street, city, state, zip, country, isDefault? }`.
+  The first address a user ever adds is auto-made default; setting `isDefault`
+  on any add/update unsets it on every other address for that user inside a
+  `$transaction`, so there's always at most one default.
+- `PATCH /api/addresses/[id]` — partial update, ownership-checked.
+- `DELETE /api/addresses/[id]` — ownership-checked; if the deleted address was
+  the default, the most-recently-created remaining one is promoted so there's
+  always a default to preselect at checkout.
+
+**`create-order` now requires `shippingAddressId`** (`src/app/api/payment/create-order/route.ts`):
+400s with "A delivery address is required" if missing, 404s if the address
+doesn't belong to the caller. This is a breaking change to that endpoint's
+contract — anything calling it must now send a saved address id.
+
+**UI:**
+- `src/components/checkout/address-selector.tsx` — radio-select over saved
+  addresses + an inline "Add new address" form (auto-opens if the user has
+  none yet).
+- `src/components/checkout/checkout-client.tsx` — client wrapper around
+  `AddressSelector` + `PlaceOrderButton` (the checkout page itself is a
+  Server Component, so this is where `selectedAddressId` state lives).
+  Preselects the default address, or the first one, on mount.
+- `PlaceOrderButton` now takes `shippingAddressId` and refuses to place the
+  order without one ("Add a delivery address" button state).
+- `/checkout` (used by both the cart's "Checkout this item" links and every
+  "Buy now" button) fetches the signed-in user's addresses server-side and
+  passes them to `CheckoutClient` — so address selection is live on **both**
+  checkout entry points automatically, not something bolted onto just one.
+- Also fixed a pre-existing bug on this page while touching it: the order
+  summary thumbnail was `style={{ background: product.image }}` (a bare URL
+  isn't valid CSS for `background`, so it silently rendered nothing) — now a
+  real `<img>`.
+- Product cards (`src/components/cards/product-card-quick-actions.tsx`) got a
+  third quick-action button — a lightning-bolt "Buy now" that jumps straight
+  to `/checkout?product=<slug>&size=<firstSize>`, alongside the existing
+  wishlist and add-to-cart buttons. This is the literal "direct click buy"
+  path the shop grid was missing — previously "Buy now" only existed on the
+  product detail page.
+
+**Known limitation carried over:** checkout is still single-item (see the
+Cart & Wishlist section above) — address selection was added to that same
+single-item flow, not to a new multi-item one. A cart with several different
+products still needs one "Checkout this item" per line.
+
+**Verification:** `tsc`/`eslint` clean. Full `curl` run against a throwaway
+user: address CRUD (add, list, default-switch on add and on PATCH,
+delete-promotes-next-default), `create-order` rejecting a missing address
+(400) and accepting + reusing one across two orders, and rendered
+`/checkout` and `/shop` HTML to confirm the address form and all three
+card quick-action buttons are present. No visual browser check (same
+Chrome-extension caveat as above).

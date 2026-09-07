@@ -5,7 +5,8 @@ import { Check, Lock } from "lucide-react";
 import { formatPrice } from "@/constants/products";
 import { getProductBySlug } from "@/lib/products";
 import { getSession } from "@/lib/auth";
-import { PlaceOrderButton } from "@/components/checkout/place-order-button";
+import { prisma } from "@/lib/prisma";
+import { CheckoutClient } from "@/components/checkout/checkout-client";
 
 export const metadata = {
   title: "Checkout",
@@ -36,6 +37,11 @@ export default async function CheckoutPage({
   const subtotal = product?.price ?? 0;
   const shipping = subtotal >= 75 || subtotal === 0 ? 0 : 9.99;
 
+  const addresses = await prisma.address.findMany({
+    where: { userId: user.id },
+    orderBy: [{ isDefault: "desc" }, { createdAt: "desc" }],
+  });
+
   return (
     <div className="mx-auto w-full max-w-3xl px-4 py-8 sm:px-6 lg:px-8 sm:py-12">
       <h1 className="text-2xl font-semibold tracking-tight">Checkout</h1>
@@ -56,9 +62,10 @@ export default async function CheckoutPage({
 
         {product ? (
           <div className="flex items-center gap-4 px-5 py-4">
-            <div
-              className="size-20 shrink-0 rounded-lg border border-border"
-              style={{ background: product.image }}
+            <img
+              src={product.image}
+              alt={product.name}
+              className="size-20 shrink-0 rounded-lg border border-border object-cover"
             />
             <div className="flex flex-1 flex-col gap-0.5">
               <p className="font-medium">{product.name}</p>
@@ -96,7 +103,8 @@ export default async function CheckoutPage({
         </dl>
 
         <div className="border-t border-border px-5 py-4">
-          <PlaceOrderButton
+          <CheckoutClient
+            addresses={addresses}
             productSlug={product?.slug ?? ""}
             productName={product?.name ?? ""}
             size={selectedSize}

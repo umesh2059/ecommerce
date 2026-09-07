@@ -59,20 +59,27 @@ export function PlaceOrderButton({
   productName,
   size,
   userEmail,
+  shippingAddressId,
   disabled,
 }: {
   productSlug: string;
   productName: string;
   size: string;
   userEmail?: string | null;
+  shippingAddressId: string | null;
   disabled: boolean;
 }) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  const missingAddress = !shippingAddressId;
+
   async function handlePlaceOrder() {
-    if (disabled) {
+    if (disabled || missingAddress) {
+      if (missingAddress) {
+        setError("Please add or select a delivery address first.");
+      }
       return;
     }
 
@@ -87,6 +94,7 @@ export function PlaceOrderButton({
           productSlug,
           size,
           quantity: 1,
+          shippingAddressId,
         }),
       });
 
@@ -166,7 +174,7 @@ export function PlaceOrderButton({
       <Button
         size="lg"
         className="w-full"
-        disabled={disabled || loading}
+        disabled={disabled || loading || missingAddress}
         onClick={handlePlaceOrder}
       >
         {loading ? (
@@ -176,6 +184,8 @@ export function PlaceOrderButton({
           </>
         ) : disabled ? (
           "Add an item to checkout"
+        ) : missingAddress ? (
+          "Add a delivery address"
         ) : (
           "Place order"
         )}

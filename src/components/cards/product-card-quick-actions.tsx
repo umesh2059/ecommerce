@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Heart, Loader2, ShoppingCart } from "lucide-react";
+import { Heart, Loader2, ShoppingCart, Zap } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { useCartWishlist } from "@/providers/cart-wishlist-provider";
@@ -50,6 +50,17 @@ export function ProductCardQuickActions({ product }: { product: Product }) {
     }
   }
 
+  function handleBuyNow(event: React.MouseEvent) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const checkoutUrl = `/checkout?product=${encodeURIComponent(
+      product.slug
+    )}&size=${encodeURIComponent(product.sizes[0] ?? "")}`;
+
+    router.push(checkoutUrl);
+  }
+
   return (
     <div className="absolute right-3 top-3 flex flex-col gap-2">
       <button
@@ -81,6 +92,14 @@ export function ProductCardQuickActions({ product }: { product: Product }) {
         ) : (
           <ShoppingCart className="size-4" />
         )}
+      </button>
+      <button
+        type="button"
+        onClick={handleBuyNow}
+        aria-label="Buy now"
+        className="flex size-8 items-center justify-center rounded-full bg-background/90 text-foreground shadow-sm backdrop-blur transition-colors hover:bg-background"
+      >
+        <Zap className="size-4" />
       </button>
     </div>
   );

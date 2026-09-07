@@ -44,7 +44,7 @@ model Address {
   isDefault Boolean  @default(false)
   createdAt DateTime @default(now())
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  orders    Order?
+  orders    Order[]
 }
 
 model Product {
@@ -105,7 +105,7 @@ model Order {
   razorpayPaymentId   String?
   razorpaySignature   String?
   total               Int
-  shippingAddressId   String?       @unique
+  shippingAddressId   String?
   createdAt         DateTime      @default(now())
   updatedAt         DateTime      @updatedAt
   shippingAddress   Address?      @relation(fields: [shippingAddressId], references: [id])

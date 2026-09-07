@@ -27,7 +27,7 @@ export async function POST(request: Request) {
       return response;
     }
 
-    const { productSlug, size, quantity = 1 } = await request.json();
+    const { productSlug, size, quantity = 1, shippingAddressId } = await request.json();
 
     if (!productSlug) {
       return NextResponse.json(
@@ -40,6 +40,24 @@ export async function POST(request: Request) {
       return NextResponse.json(
         { success: false, message: "A valid size is required" },
         { status: 400 }
+      );
+    }
+
+    if (!shippingAddressId) {
+      return NextResponse.json(
+        { success: false, message: "A delivery address is required" },
+        { status: 400 }
+      );
+    }
+
+    const address = await prisma.address.findUnique({
+      where: { id: shippingAddressId },
+    });
+
+    if (!address || address.userId !== user.id) {
+      return NextResponse.json(
+        { success: false, message: "Delivery address not found" },
+        { status: 404 }
       );
     }
 
@@ -78,6 +96,7 @@ export async function POST(request: Request) {
         userId: user.id,
         total,
         razorpayOrderId: order.id,
+        shippingAddressId: address.id,
         items: {
           create: {
             productId: product.id,
