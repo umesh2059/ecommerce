@@ -4,6 +4,7 @@ import { Star } from "lucide-react";
 import type { Product } from "@/types";
 import { formatPrice } from "@/constants/products";
 import { cn } from "@/lib/utils";
+import { ProductCardQuickActions } from "./product-card-quick-actions";
 
 export function ProductCard({
   product,
@@ -41,6 +42,7 @@ export function ProductCard({
             </span>
           )}
         </div>
+        <ProductCardQuickActions product={product} />
       </div>
 
       <div className="flex flex-1 flex-col gap-1 p-4">

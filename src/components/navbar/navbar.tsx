@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { Heart, Menu, Search, ShoppingCart, User } from "lucide-react";
+import { Search, User } from "lucide-react";
 
 import { categories } from "@/constants/products";
 import { Button } from "@/components/ui/button";
 import { LogoutButton } from "@/components/auth/logout-button";
 import { getSession } from "@/lib/auth";
 import { MobileMenu } from "./mobile-menu";
+import { CartWishlistIcons } from "./cart-wishlist-icons";
 
 const mainNav = [
   { name: "New Arrivals", href: "/shop?filter=new" },
@@ -72,12 +73,7 @@ export async function Navbar() {
             </>
           )}
 
-          <Button variant="ghost" size="icon" aria-label="Wishlist">
-            <Heart className="size-5" />
-          </Button>
-          <Button variant="ghost" size="icon" aria-label="Cart">
-            <ShoppingCart className="size-5" />
-          </Button>
+          <CartWishlistIcons />
         </div>
       </div>
     </header>

@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Star, Heart, Check, Truck, RefreshCcw, ShieldCheck } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Star, Heart, Check, Loader2, ShoppingCart, Truck, RefreshCcw, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { formatPrice } from "@/constants/products";
 import { cn } from "@/lib/utils";
+import { useCartWishlist } from "@/providers/cart-wishlist-provider";
 import type { Product } from "@/types";
 
 type TokenPayload = {
@@ -21,12 +23,46 @@ export function ProductDetailInteractive({
   product: Product;
   user: TokenPayload;
 }) {
+  const router = useRouter();
+  const { wishlistIds, toggleWishlist, addToCart } = useCartWishlist();
   const [selectedImage, setSelectedImage] = useState(product.image);
   const [selectedSize, setSelectedSize] = useState(product.sizes[0] || "");
   const [selectedColor, setSelectedColor] = useState(product.colors[0] || "");
-  const [isWishlisted, setIsWishlisted] = useState(false);
+  const [isTogglingWishlist, setIsTogglingWishlist] = useState(false);
+  const [isAddingToCart, setIsAddingToCart] = useState(false);
+  const [cartMessage, setCartMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
+
+  const isWishlisted = wishlistIds.has(product.id);
 
   const hasDiscount = product.compareAtPrice && product.compareAtPrice > product.price;
+
+  async function handleToggleWishlist() {
+    if (!user) {
+      router.push(`/login?next=${encodeURIComponent(`/shop/product/${product.slug}`)}`);
+      return;
+    }
+
+    setIsTogglingWishlist(true);
+    await toggleWishlist(product.id);
+    setIsTogglingWishlist(false);
+  }
+
+  async function handleAddToCart() {
+    if (!user) {
+      router.push(`/login?next=${encodeURIComponent(`/shop/product/${product.slug}`)}`);
+      return;
+    }
+
+    setIsAddingToCart(true);
+    setCartMessage(null);
+    const result = await addToCart({ productId: product.id, size: selectedSize });
+    setIsAddingToCart(false);
+    setCartMessage(
+      result.success
+        ? { type: "success", text: "Added to cart" }
+        : { type: "error", text: result.message ?? "Unable to add to cart" }
+    );
+  }
 
   const checkoutUrl = `/checkout?product=${encodeURIComponent(
     product.slug
@@ -170,31 +206,63 @@ export function ProductDetailInteractive({
           </div>
         )}
 
-        {/* Checkout Actions */}
-        <div className="flex flex-col gap-3 sm:flex-row mt-2">
-          {user ? (
-            <Button render={<Link href={buyHref} />} size="lg" className="flex-1 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
-              Buy now
-            </Button>
-          ) : (
+        {/* Cart & Checkout Actions */}
+        <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 sm:flex-row">
             <Button
-              render={<Link href={buyHref} />}
               size="lg"
-              className="flex-1 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg"
+              variant="outline"
+              onClick={handleAddToCart}
+              disabled={isAddingToCart}
+              className="flex-1 rounded-xl transition-all duration-300"
             >
-              Buy now · Sign in to checkout
+              {isAddingToCart ? (
+                <Loader2 className="size-4 animate-spin" />
+              ) : (
+                <ShoppingCart className="size-4" />
+              )}
+              Add to cart
             </Button>
+            {user ? (
+              <Button render={<Link href={buyHref} />} size="lg" className="flex-1 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
+                Buy now
+              </Button>
+            ) : (
+              <Button
+                render={<Link href={buyHref} />}
+                size="lg"
+                className="flex-1 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg"
+              >
+                Buy now · Sign in to checkout
+              </Button>
+            )}
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={handleToggleWishlist}
+              disabled={isTogglingWishlist}
+              aria-pressed={isWishlisted}
+              className={cn("sm:w-14 rounded-xl border border-border transition-colors duration-300",
+                isWishlisted && "bg-rose-50 border-rose-200 text-rose-600 hover:bg-rose-100 hover:text-rose-700 hover:border-rose-300")}
+            >
+              {isTogglingWishlist ? (
+                <Loader2 className="size-5 animate-spin" />
+              ) : (
+                <Heart className={cn("size-5 transition-transform duration-300", isWishlisted && "fill-rose-600 scale-110 text-rose-600")} />
+              )}
+              <span className="sr-only">Add to wishlist</span>
+            </Button>
+          </div>
+          {cartMessage && (
+            <p
+              className={cn(
+                "text-sm font-medium",
+                cartMessage.type === "success" ? "text-emerald-600" : "text-destructive"
+              )}
+            >
+              {cartMessage.text}
+            </p>
           )}
-          <Button
-            size="lg"
-            variant="outline"
-            onClick={() => setIsWishlisted(!isWishlisted)}
-            className={cn("sm:w-14 rounded-xl border border-border transition-colors duration-300", 
-              isWishlisted && "bg-rose-50 border-rose-200 text-rose-600 hover:bg-rose-100 hover:text-rose-700 hover:border-rose-300")}
-          >
-            <Heart className={cn("size-5 transition-transform duration-300", isWishlisted && "fill-rose-600 scale-110 text-rose-600")} />
-            <span className="sr-only">Add to wishlist</span>
-          </Button>
         </div>
 
         {/* Perks Grid */}
