@@ -51,7 +51,7 @@ export function AddProductModal() {
               Add New Product
             </h2>
             <p className="text-sm text-muted-foreground mt-1">
-              Add detail for the new product catalog item. Images are
+              Add detail for the new product catalogs item. Images are
               automatically processed by Cloudinary.
             </p>
 
